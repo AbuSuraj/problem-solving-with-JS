@@ -29,13 +29,13 @@
 function isPalindrome(str){
     let j =0;
     let str2 = [];
-    for( let i = str.length-1; i >=0; i--){
+    for( let i = str.length-1; i >=str.length/2; i--){
         if (str[j++] === str[i]){continue;}
         else{return false;}
         
     }
     return true;
 }
-let str1 = "madm";
+let str1 = "sad";
 if(isPalindrome(str1)){console.log("palindrom")}
 else console.log("not a palindrome")
